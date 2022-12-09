@@ -1,0 +1,41 @@
+GET http://localhost:3000/movies/
+### 
+
+
+GET http://localhost:3000/movies/52/
+### 
+
+POST http://localhost:3000/movies/ 
+content-type: application/json 
+
+{
+    "directorId": 6,
+    "movieName": "Vijay Devarkonda",
+    "leadActor": "Arjun Reddy"
+}
+###
+
+
+GET http://localhost:3000/directors/6/movies 
+###
+
+
+
+PUT http://localhost:3000/movies/115/
+content-type: application/json 
+
+{
+    "directorId": 6,
+    "movieName": "Arjun Reddy",
+    "leadActor": "Vijay Devarakonda"
+}
+###
+
+
+DELETE http://localhost:3000/movies/60/
+###
+
+
+GET http://localhost:3000/directors/
+###
+
